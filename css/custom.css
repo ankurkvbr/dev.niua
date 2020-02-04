@@ -155,9 +155,7 @@ div#footer-message {
     font-size: 13px;
 }
 
-.second-menu li a:hover {
-  background-color: #111;
-}
+
 
 
 .navbar-fixed-top{
@@ -1137,6 +1135,7 @@ LinkedIn
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 20px;
+
 }
 
 .contain {
@@ -1985,7 +1984,7 @@ position: fixed;
     padding: 8px;
 }
     article#node-79 P {
-    font-size: 16px;
+    font-size: 14px;
         color: grey;
 }   
 .float-menu2 ul li a {
@@ -2086,7 +2085,9 @@ article#node-811 .field.field-name-body.field-type-text-with-summary.field-label
 
 .sidemenu-bar {
   position: fixed;
-  top: 30rem;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
 }
 .sidemenu-bar ul {
   padding: 0px;
@@ -2186,7 +2187,8 @@ ul#isotope-instance-vg li {
     margin-right: 19px;
 }
 article#node-79 .card{
-    height: 630px;
+    height: 500px;
+    width: 300px;
 }
 article#node-79 h3 {
     text-align: center;
@@ -2199,4 +2201,23 @@ article#node-79 h3 {
     text-align: center;
     font-weight: 700;
     font-size: 3.6rem;
+}
+.view.view-news.view-id-news.view-display-id-page.view-dom-id-5fa8505b4741263e9d39668b23f50792 p {
+    font-size: 14px;
+    line-height: 22px;
+}
+.view.view-journal-urban-india {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.view.view-journal-urban-india.views-field-field-images{
+    margin-top: 10px;}
+
+.column1.vc{
+    width: 24.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    margin: 0 auto;
+    float: inherit;
 }

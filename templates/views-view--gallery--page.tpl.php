@@ -26,7 +26,7 @@
   <?php if (!empty($photo)) {
     foreach ($photo[0] as $photo_gallery) {
          // echo $news_letter;
- echo '<a href="'.$photo_gallery.'" target="_blank">';
+ echo '<a href="'.$photo_gallery.'" target="_blank" class="gallery">';
  echo '<img src="'.$photo_gallery.'" style="width:100%;">';
           echo '</a>';
 	}

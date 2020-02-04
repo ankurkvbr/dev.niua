@@ -13,7 +13,7 @@
 
     // Defaults
     var settings = $.extend({
-        'time': 2000,
+        'time': 3000,
         'delay': 10
     }, options);
 
@@ -64,7 +64,7 @@
 
             // Updates the number until we're done
             var f = function() {
-                $this.text($this.data('counterup-nums').shift());
+                $this.text($this.data('counterup-nums').shift(f));
                 if ($this.data('counterup-nums').length) {
                     setTimeout($this.data('counterup-func'),delay);
                 } else {

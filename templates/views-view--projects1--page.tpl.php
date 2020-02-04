@@ -1,5 +1,37 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+<scrpt><script>
+$( document ).ready(function() {
+//grabs the hash tag from the url
+var hash = window.location.hash;
+//checks whether or not the hash tag is set
+if (hash != "") {
+//removes all active classes from tabs
+$('#tabs li').each(function() {
+$(this).removeClass('active');
+});
+$('#myTabContent div').each(function() {
+  $(this).removeClass('in active');
+});
+//this will add the active class on the hashtagged value
+var link = "";
+$('#tabs li').each(function() {
+  link = $(this).find('a').attr('href');
+  if (link == hash) {
+    $(this).addClass('active');
+  }
+});
+$('#myTabContent div').each(function() {
+
+  link = $(this).attr('id');
+  if ('#'+link == hash) {
+
+    $(this).addClass('in active');
+  }
+});
+}
+});
+</script></scrpt>
 <style>
 .row.resources {
     padding: 0px !important;
@@ -35,7 +67,7 @@
                 </div>
     <div class="row">
     <div class="col-md-12">
-    <ul class="nav nav-tabs">
+    <ul class="nav nav-tabs" id="tabs">
     <li class="active"><a data-toggle="tab" href="#about">ABOUT</a></li>
     <li><a data-toggle="tab" href="#home">TEAM</a></li>
     <li><a data-toggle="tab" href="#menu1">GEOGRAPHY</a></li>
@@ -43,7 +75,7 @@
     <li><a data-toggle="tab" href="#menu3">RESOURCES  </a></li>
   </ul>
 
-  <div class="tab-content">
+  <div class="tab-content"  id="myTabContent">
       <div id="about" class="tab-pane fade in active">
       <div class="description" style="text-align: justify;"><?= $projDetails['description']; ?></div>
     </div>

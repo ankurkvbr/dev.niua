@@ -9,17 +9,17 @@
 <!--Banner-->
 
  <header  role="banner" class=" 1st-menu" style="background:#666;">
-     <div class="page-mar">
+  <div class="page-mar">
   <div class="second-menu ">
   <ul >
   <li><a href="#"><i class="fa fa-home"></i></a></li>
-  <li><a href="#" class="active"><i class="fa fa-arrow-down"></i>Skip to main content</a></li>
-  <li><a href="#"><i class="fa fa-arrow-down"></i>Skip to Navigation</a></li>
+  <li><a href="#block-block-43" class="active"><i class="fa fa-arrow-down"></i>Skip to main content</a></li>
+  <li><a href="#navbar"><i class="fa fa-arrow-down"></i>Skip to Navigation</a></li>
   <li><a href="#"><i class="fa fa-volume-up"></i>Screen Reader Access</a></li>
-  <li><a href="#">Text Size: A- A A+</a></li>
+      <li><a href="#">Text Size:<span class="decrease"> A-</span> <span class="resetMe">A</span> <span class="increase">A+</span></a></li>
   </ul>
   </div>
-         </div>
+  </div>
 </header>
 
 

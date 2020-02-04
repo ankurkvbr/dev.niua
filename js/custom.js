@@ -33,5 +33,30 @@ for (var i = 0; i < 25; i++) {
   allImages += '<img src="https://placekitten.com/'+width+'/'+height+'" alt="pretty kitty">';
 }
 
-$('#photos').append(allImages);
+jQuery(document).ready(function(){        
+           var originalSize = jQuery('div').css('font-size');         
+          // reset        
+           jQuery(".resetMe").click(function(){           
+          jQuery('div').css('font-size', originalSize);         
+           });
+         
+           // Increase Font Size          
+           jQuery(".increase").click(function(){         
+          var currentSize = jQuery('div').css('font-size');         
+          var currentSize = parseFloat(currentSize)*1.2;          
+          jQuery('div').css('font-size', currentSize);         
+          return false;          
+          });        
+		  
+           // Decrease Font Size       
+           jQuery(".decrease").click(function(){        
+           var currentFontSize = jQuery('div').css('font-size');        
+           var currentSize = jQuery('div').css('font-size');        
+           var currentSize = parseFloat(currentSize)*0.8;        
+           jQuery('div').css('font-size', currentSize);         
+           return false;         
+           });         
+         });
+
+jQuery('#photos').append(allImages);
  <!--tabs-end-->
